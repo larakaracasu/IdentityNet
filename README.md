@@ -1,4 +1,7 @@
-# COMS-4995-ACV-Project
+# IdentityNet: A Platform for Facial Anti-Spoofing Detection
+
+Facial spoofing poses a significant challenge in cyber security. This paper introduces IdentityNet, a web platform designed to (1) differentiate genuine faces from spoofed faces and (2) identify the type of presentation attack. IdentityNet allows users to easily select a model, upload their own photo, and receive a prediction for whether the image is live or spoofed, as well as the spoof type classification. Our approach uses a variety of model architectures, including binary and multiclass convolutional neural networks (CNNs), unimodal and multimodal Vision Transformers (ViTs), and Generative Adversarial Networks (GANs). The performance of these models was evaluated with the following metrics: loss, accuracy, precision, recall, and F1 score. Ultimately, we find that the model performance greatly varied. While the multiclass CNN achieved the highest accuracy at 0.9760, our GAN-driven CNN achieved the lowest recall at 0.9560. We also discuss model validation mechanisms including data leakage investigations, fairness testing using additional dataset for more diverse demographics, and model explainability analysis. Overall, this paper addresses the development, training, and evaluation of the aforementioned models, their performances, validation and the creation of the IdentityNet platform.
+For this, we used the Celeb-A Spoof For Face Anti-Spoofing (Kaggle 2020) dataset of 47,248 spoof images and 19,924 live images.
 
 ### Binary CNN
 * Binary classifier with CNN: [model.pth](https://drive.google.com/file/d/1vxKYC-lTgIN_uPRxgROswtFvvE083ftW/view?usp=sharing)
